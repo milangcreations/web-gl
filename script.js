@@ -29,7 +29,7 @@ function webGlContext(canvas) {
         halfFloat = gl.getExtension("OES_texture_half_float");
         supportLinearFiltering = gl.getExtension("OES_texture_half_float_linear");
     }
-
+    alert(gl);
     gl.clearColor(0.0, 0.0, 0.0, 1.0);
 
     const halfFloatTexType = isWebGl2 ? gl.HALF_FLOAT : gl.HALF_FLOAT_OES;
